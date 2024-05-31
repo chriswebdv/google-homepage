@@ -7,7 +7,6 @@
 body {
   background-color: #0f172a;
   color: white;
-  padding: 14px;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -19,6 +18,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 14px;
 }
 
 nav,
@@ -52,11 +52,18 @@ main {
   align-items: center;
   justify-content: center;
   gap: 34px;
+  padding: 0 14px;
 }
 
 #header-logo {
   font-size: 4em;
   font-family: "Times New Roman", Times, serif;
+}
+
+header section img {
+    max-width: 40px;
+    border-radius: 50%;
+    border: 2px solid cyan;
 }
 
 .search-bar {
@@ -72,7 +79,7 @@ main {
 
 .search-bar:hover {
   border-color: transparent;
-  background: darkgrey;
+  background: #334155;
 }
 
 input {
@@ -82,3 +89,70 @@ input {
   color: white;
   flex: 1;
 }
+
+.search-buttons-container button {
+  padding: 10px 14px;
+  border-radius: 4px;
+  background-color: #334155;
+  border: 1px solid transparent;
+  color: white;
+  cursor: pointer;
+}
+.search-buttons-container {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.icon-button-container {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+.search-buttons-container button :hover {
+  border: 1px solid darkgray;
+}
+
+.icon-button {
+    background: transparent;
+    outline: none;
+    border:none;
+    color: white;
+    font-size: 1.2em;
+
+}
+
+.lang-select {
+  font-size: 0.9em;
+}
+
+.lang-select span {
+  color: cyan;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+}
+
+footer > section {
+  padding: 14px;
+}
+
+footer > section:last-child {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 14px;
+  border-top: 1px solid darkgray;
+}
+
+.footer-link {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.footer-link a {
+    cursor: :pointer;
+}
+

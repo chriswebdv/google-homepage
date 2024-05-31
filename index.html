@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Google</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   </head>
   <body>
     <header>
@@ -19,16 +20,16 @@
       <section>
         <a class="white-link" href="#add_a_link">
           <p>Gmail</p>
-        </a href="#add_a_link">
+        </a>
         <a class="white-link" href="#add_a_link">
           <p>Images</p>
-        </a href="#add_a_link">
+        </a>
+        <a class="white-link" href="#add_a_link">
+            <i class="fa-solid fa-braille"></i>
+        </a>
         <a href="#add_a_link">
-          <!-- <p></p> -->
-        </a href="#add_a_link">
-        <a href="#add_a_link">
-          <!-- <p></p> -->
-        </a href="#add_a_link">
+          <img src="./images/2A02E015-6F13-4010-8799-30F2C7C0DA3D.jpg" alt="corgi pic">
+        </a>
       </section>
     </header>
     <main>
@@ -37,15 +38,19 @@
       </div>
       <div class="search-bar">
         <div>
-            icon
+            <i class="fa-solid fa-magnifying-glass"></i>
         </div>
         <input />
-        <div>
-          <button>icon</button>
-          <button>icon</button>
+        <div class="icon-button-container">
+          <button class="icon-button">
+            <i class="fa-solid fa-microphone"></i>
+          </button>
+          <button class="icon-button">
+            <i class="fa-solid fa-camera"></i>
+          </button>
         </div>
         </div>
-        <div>
+        <div class="search-buttons-container">
             <button>
                 <p>Google Search</p>
             </button>
@@ -53,8 +58,8 @@
                 <p>I'm Feeling Lucky</p>
             </button>
         </div>
-        <div> 
-            <p>Google offered in: <span>Spanish</span></p>
+        <div class="lang-select"> 
+            <p>Google offered in: <span>Español</span></p>
         </div>
     </main>
     <footer>
@@ -62,12 +67,12 @@
             <p>Honduras</p>
         </section>
         <section>
-            <div>
+            <div class="footer-link">
                 <a href="">Advertising</a>
                 <a href="">Business</a>
                 <a href="">How Search Works</a>
             </div>
-            <div>
+            <div class="footer-link">
                 <a href="">Privacy</a>
                 <a href="">Terms</a>
                 <a href="">Settings</a>
